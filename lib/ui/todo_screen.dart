@@ -18,7 +18,7 @@ class UndoneList extends State{
     void tasking(List data) {
       for(int i = 0; i<data.length; i++){
         List test = data[i].toMap().values.toList();
-        task.add(FlatButton(child: Text(test[0]),));
+        print(test[0]);
       }
     }
     var scaffold = Scaffold(
@@ -66,7 +66,7 @@ class UndoneList extends State{
                 print(result);
               },
             ),
-              ], task,
+              ],
             ),
           ),
           Scaffold(
